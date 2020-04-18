@@ -12,6 +12,6 @@ public class Day12LastStoneWeight {
 			if (remainingWeight != 0)
 				maxHeap.add(remainingWeight);
 		}
-		return maxHeap.size() > 0 ? maxHeap.remove() : 0;
+		return maxHeap.isEmpty() ? 0 : maxHeap.remove();
 	}
 }
